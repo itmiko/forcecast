@@ -1,0 +1,439 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- ========== VIEWPORT META ========== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <!-- ========== PAGE TITLE ========== -->
+        <title>Forcecast Predictive Analytics | Sparking Innovation in Analytics</title>
+
+        <!-- ========== META TAGS ========== -->
+        <meta name="description" content="Forcecast is a machine-learning, predictive analytics engine that provides future-looking insights on a companies sales pipeline.">
+        <meta name="keywords" content="retention, renewal, campaign, predictive analytics, forcecast, salesforce, pexlify, forecast, sales, leads, opportunities, machine learning, CRM, neural, networks churn, ai, artifical intelligence">
+        <meta name="author" content="Forcecast">
+
+        <!-- ========== FAVICON & APPLE ICONS ========== -->
+        <link rel="shortcut icon" href="images/forcecast-favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- ========== MINIFIED VENDOR CSS ========== -->
+        <link rel="stylesheet" href="styles/vendor.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        
+        
+        <!-- ========== MODERNIZR ========== -->
+    	<script src="scripts/vendor/modernizr.js"></script>
+    			<!-- ========== Google Analytics ========== -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-101767819-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<style>
+			#overlay {
+			  position: fixed;
+			  top: 0;
+			  left: 0;
+			  z-index: 1;
+			  height: 100%;
+			  width: 100%;
+			  background: #ffffff;
+			  opacity: 0.6;
+			  display: none;
+			}
+			#video {
+			  display: none;
+			  position: absolute;
+			  top: 20%;
+			  left: 50%;
+              margin-left: -25%;
+			  width: 70%;
+			  z-index: 2;
+			}
+			#video-container {
+			  position: relative;
+			  padding-bottom: 56.25%;
+			  padding-top: 30px;
+			  height: 0;
+			  overflow: hidden;
+			}
+			#video-container iframe {
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 70%;
+			  height: 70%;
+			}
+		</style>
+    </head>
+
+    <!-- ========== BODY ==========
+    .light-header: for light colored header
+    .dark-header: for dark colored header
+    ==========  ========== -->
+    <body class="light-header animsition">
+		       
+        <!-- ========== NAVIGATION ========== -->
+    	<nav class="navbar yamm navbar-fixed-top" role="navigation">
+    		<div class="container-fluid">
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    					<span class="sr-only">Toggle navigation</span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button> <!-- end navbar-toggle -->
+    				<a href="#" target="_top" class="navbar-brand" role="button">
+    					<img src="images/Asset 1_white.svg" alt="forcecast Logo" class="light-logo">
+    					<img src="images/Asset 1.svg" alt="forcecast Logo" class="dark-logo">
+       				</a> <!-- end navbar-brand -->
+    			</div> <!-- end navbar-header -->
+    			<div id="navbar" class="navbar-collapse collapse">
+    				<ul class="nav navbar-nav pull-right">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+    				</ul> <!-- end navbar-nav -->
+    			</div> <!--end nav-collapse -->
+    		</div> <!-- end container -->
+    	</nav>
+
+        <!-- ========== HEADER ========== -->
+        <header class="header main-header parallax-bg" data-parallax="scroll" data-image-src="images/bg.jpg" data-speed="0.4" >
+            <div class="primary-trans-bg">
+                <div class="container">
+                    <!-- For centering the content vertically -->
+                  <div class="outer">
+                        <div class="inner text-center">
+                            <h2 class="white-color">Empowering Sales Teams</h2>
+                            <h1 class="white-color">With Intelligent Predictive Analytics</h1>
+                            <h5> Act on opportunities most likely to buy and target customers most likely to leave.<br>
+                            Forecast is focused on delivering Sales and Results.</h5>
+							<input type="button" value="Watch Video" id="btn" class="btn se-btn-black btn-rounded mt20"/>
+							<div id="container">
+							  <div id="overlay"></div>
+							  <div id="video">
+								<div id="video-container"></div>
+							  </div>
+							</div>             
+                        </div> <!-- end inner -->
+                    </div> <!-- end outer -->
+                </div> <!-- end container -->
+            </div> <!-- end primary-trans-bg -->
+        </header>
+
+        <!-- ========== SINGLE FEATURE SECTION ========== -->
+        <section class="se-section single-feature gray-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Get a true reflection of your sales pipeline!</h2>
+                        <p>Forcecast is helping teams win more opportunities, keep customers for longer and increases
+                            <br>the accuracy of forecasts.</p>
+                        <p class="sales">Available for </p>
+                        <img src="images/Salesforce Logo.png" alt="Salesforce" style="height: 45px">
+                        <img src="images/dashboard.png" alt="" class="img-responsive">
+                        <h2 class="second-h">One size doesn't fit all</h2>
+                        <p>Every organisation is different. We understand companies customise and manage data in unique ways.</p>
+                        <p class="second-p">With Forcecast, we configure our solution to suit your needs so you can leverage your data, <br>
+                        target the right accounts and make significant returns on your investment.  </p> 
+                    </div>
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+
+        <!-- ========== FEATURES ========== -->
+        <section class="se-section features-section gray-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 se-feature marg">
+                        <img src="images/Diagram_percent.png" alt="Diagram_percent">
+                        <p>Opportunity <br>Scores<p>
+                    </div>
+                   
+                    <div class="col-md-3 col-sm-6 se-feature">
+                        <img src="images/Graph_laptop.png" style="margin-top:-18px" alt="Graph_laptop">
+                        <p>Accurate <br>Forecasting</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 se-feature">
+                        <img src="images/Group 43.png" alt="Group 43">
+                        <p>Automated <br>Actions</p>
+                    </div>
+                     <div class="col-md-3 col-sm-6 se-feature">
+                        <img src="images/Group 44.png" alt="Group 44">
+                        <p>Campaign <br>Management</p>
+                    </div>
+
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+
+        <!-- ========== SINGLE FEATURE SECTION ========== -->
+    <div class="container">
+
+        <section class="se-section single-feature square first">
+            <div class="col-md-6 zero-padding mt40 col-md-push-6 side-img">
+                <img src="images/Image 6.png" alt="Image 6" class="img-responsive">
+            </div>
+
+            <div class="container feature-desc">
+                <div class="row">
+                    <div class="col-md-5 feature-info">
+						<h2 class="third-h"><span>We identify the</span><br>hottest prospects</h2>
+                        <p>Powerful machine-learning algorithms unlock
+                            hidden patterns and relationships in your data</p>
+                        <p>We score each opportunity and highlight the 
+                        ones with the highest propensity of buying or 
+                        leaving and identify any clues about why.</p>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+
+        </section>
+
+        <!-- ========== SINGLE FEATURE SECTION ========== -->
+        <section class="se-section single-feature square">
+            <div class="col-md-6 side-img">
+                <img src="images/campaign_actions_2.png" alt="campaign_actions_2" class="img-responsive">
+            </div>
+
+            <div class="container feature-desc">
+                <div class="row">
+                    <div class="col-md-6 col-md-push-6 mt60 feature-info">
+                        <h2 class="third-h"><span>From hidden insights</span><br>to actionable tasks</h2>
+                        <p>Providing insightful reports, build scheduled sales campaigns to target prioritised opportunities and accounts. </p>
+                        <p>By adding automated actions, agents can focus on selling, not wasting time inputing data.</p>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+    </div>
+
+          <!-- ========== SINGLE FEATURE SECTION ========== -->
+        <section class="se-section single-feature square wave" style="background-image: url(images/wave-bg.jpg);">
+            <div class="container feature-desc">
+                <div class="row">
+                    <div class="col-md-6 feature-info">
+                        <h2 class="third-h"><span>Stop forecasting</span><br>in the dark</h2>
+                        <p>9% of sales organisations continually miss their forecasts by more than 10%. Well, that stops today!</p>
+                        <p>Using predictive analytics, we provide accurate forecasts on your pipeline, allowing you to make clear decisions on how to prioritise your resources.</p>
+                        <a href="#" class="btn se-btn-black btn-rounded">Request a demo</a>
+
+                    </div>
+                    <div class="col-md-6 mt40">
+                        <img src="images/wave-picture.png" alt="wave-picture" class="img-responsive">
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+        
+
+         <section class="se-section single-feature square wave-2" style="background-image: url(images/wave-bg-2.jpg);">
+            <div class="container feature-desc">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Features that keep getting smarter</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 se-feature-style-2 mb60">
+                        <div class="left">
+                            <i class="icon ion-android-search"></i>
+                        </div>
+                        <div class="right">
+                            <h5>Invisible Insights</h5>
+                            <p>Detect hidden patterns and relationships across your organisations open data-sets</p>
+                        </div>
+                        <div class="left">
+                            <i class="icon ion-android-search"></i>
+                        </div>
+                        <div class="right">
+                            <h5>Retain More Customers</h5>
+                            <p>Predict churn rates. Implement targeted renewal campaigns. Increase revenue growth.</p>
+                        </div>
+                        <div class="left">
+                            <i class="icon ion-android-search"></i>
+                        </div>
+                        <div class="right">
+                            <h5>Increase Win-Rates</h5>
+                            <p>Identify accounts with a high probability of closing. Increase win-rates. Increase revenues.</p>
+                        </div>
+                        <div class="left">
+                            <i class="icon ion-android-search"></i>
+                        </div>
+                        <div class="right">
+                            <h5>Better Customer Understanding</h5>
+                            <p>Using predictive analytics, act instantly on future customer trends and behaviours.</p>
+                        </div>
+                        <div class="left">
+                            <i class="icon ion-android-search"></i>
+                        </div>
+                        <div class="right">
+                            <h5>Continous Learning</h5>
+                            <p>Machine-Learning algorithms get smarterand more accurate with every analysis.</p>
+                        </div>
+                        <div class="left">
+                            <i class="icon ion-android-search"></i>
+                        </div>
+                        <div class="right">
+                            <h5>Scales Up</h5>
+                            <p>Fits seamlessly into big data infrastructures. Scales with large, diverse and open data-sets.</p>
+                        </div>
+                        <a href="#" class="btn se-btn btn-rounded">Learn More</a>
+                    </div> <!-- end se-feature -->
+                    <div class="col-md-6 size">
+                        <img src="images/iMac-5K-2_w_450.png" alt="wave-picture" class="img-responsive">
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+          
+        <!-- ========== STEPS ========== -->
+        <section class="se-section se-steps" style="background-image: url(images/wave-bg-3.jpg);">
+            <div class="container">
+                <div class="row text-center">
+                    <h3 class="underline">Not required - A PHD In Data Science</h3>
+                </div>
+                <section class="se-section single-feature square ">
+                    <div class="col-md-6 zero-padding col-md-push-6 side-img">
+                        <img src="images/Image 5.png" alt="Image 5" class="img-responsive">
+                    </div>
+
+                    <div class="container feature-desc">
+                        <div class="row">
+                            <div class="col-md-5 feature-info one-step mt20">
+                                    <h4>Set-up & Start</h4>
+                                <p>To start, select to run either a Sales or Churn Analysis. Set your conditions and filters. Click 'Run' to start the analysis.</p>
+                            </div>
+                        </div> <!-- end row -->
+                    </div> <!-- end container -->
+                </section>
+
+        <!-- ========== SINGLE FEATURE SECTION ========== -->
+                <section class="se-section single-feature square mt30">
+                    <div class="col-md-6 zero-padding side-img">
+                        <img src="images/Image 6.png" alt="Image 6" class="img-responsive">
+                    </div>
+                    <div class="container feature-desc">
+                        <div class="row">
+                            <div class="col-md-6 col-md-push-6 feature-info one-step">
+                               <h4>Review & Retain</h4>
+                                <p>Review the report which highlights sales and renewal opportunites using predicted scores. Create Sales or Renewal campaigns.</p>
+                            </div>
+                        </div> <!-- end row -->
+                    </div> <!-- end container -->
+                </section>
+
+
+                <section class="se-section single-feature square first mt30">
+                    <div class="col-md-6 zero-padding col-md-push-6 side-img size">
+                        <img src="images/Image 7.png" alt="Image 7" class="img-responsive">
+                    </div> 
+                    <div class="container feature-desc">
+                        <div class="row">
+                            <div class="col-md-5 feature-info one-step">
+                                <h4>Attach & Assign</h4>
+                                <p>Automate & attach tasks to sales and renewal campaigns. Assign team members to follow up, take action & increase win-rates or renewal rates.</p>
+                            </div>
+                        </div> <!-- end row -->
+                    </div> <!-- end container -->
+                </section>
+            </div>
+        </section>
+
+
+        <!-- ========== CTA SECTION ========== -->
+        <section class="se-section simple">
+            <div class="container">
+                <div class="row text-center">
+                    <h2>Try Forcecast Today</h2>
+                    <p>FREE Download. Fill in the request form and we'll send you Forcecast Churn. No credit card required.</p>
+                    <a href="#" class="btn se-btn ">FREE DOWNLOAD</a>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+
+        <!-- ========== FOOTER ========== -->
+        <footer class="light-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-6">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 col-sm-6">
+                        <ul>
+                            <li><i class="fa fa-twitter" aria-hidden="true"></i><a href="#">Facebook</a></li>
+                            <li><i class="fa fa-facebook" aria-hidden="true"></i><a href="#">Twitter</a></li>
+                            <li><i class="fa fa-instagram" aria-hidden="true"></i><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <ul>
+                            <li><a href="#">Subscribe to our newsletter</a></li>
+                            <li>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Email Address">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">OK</button>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                  
+                    <div class="col-md-4 col-sm-6">
+                        <ul>
+                            <address>497 Evergreen Rd. Roseville, CA 95673<br>
+                                <a href="tel://+44 345 678 903">+44 345 678 903</a> <br>  
+                                <a href="mailto:adobexd@mail.com">adobexd@mail.com</a>
+                            </address>
+                        </ul>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </footer>
+
+
+    	<script src="scripts/vendor.js"></script>
+
+        <!-- ========== MINIFIED PLUGINS JS ========== -->
+    	<script src="scripts/plugins.js"></script>
+
+    	<script src="scripts/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+			$('#btn').click(function() {
+			  $('#video, #overlay').fadeIn('slow');
+			  $('#video-container').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/NPvDAxzFu8M" frameborder=0 allowfullscreen></iframe>');
+			});
+
+			$(document).on('touchend, mouseup', function(e) {
+			  if (!$('#video').is(e.target)) {
+				$('#video, #overlay').fadeOut('slow');
+				$('#video-container').html('');
+			  }
+			});
+		</script>
+    </body>
+
+</html>
